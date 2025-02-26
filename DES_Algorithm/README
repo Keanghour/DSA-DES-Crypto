@@ -1,0 +1,120 @@
+
+---
+
+# DES (Data Encryption Standard) Implementation in Java
+
+This project demonstrates the implementation of **DES (Data Encryption Standard)** encryption and decryption in Java. DES is a symmetric-key algorithm for the encryption of digital data. Although it is considered weak by today's standards, it is still widely studied and used in legacy systems.
+
+### Table of Contents
+
+- [DES (Data Encryption Standard) Implementation in Java](#des-data-encryption-standard-implementation-in-java)
+    - [Table of Contents](#table-of-contents)
+    - [Overview](#overview)
+    - [Project Structure](#project-structure)
+    - [Prerequisites](#prerequisites)
+    - [How to Run](#how-to-run)
+      - [1. Generate DES Key](#1-generate-des-key)
+      - [2. Encrypt Data](#2-encrypt-data)
+      - [3. Decrypt Data](#3-decrypt-data)
+    - [Notes](#notes)
+    - [License](#license)
+    - [Additional Notes:](#additional-notes)
+
+### Overview
+
+This project provides a **Java** implementation of **DES** encryption and decryption. The following operations are demonstrated:
+
+1. **Generate a DES key** using `KeyGenerator`.
+2. **Encrypt data** using the generated DES key.
+3. **Decrypt the encrypted data** back to the original message using the same key.
+
+### Project Structure
+
+The project is divided into the following classes:
+
+1. **DESKeyGenerator.java**: Contains logic to generate a DES key.
+2. **DESEncryptor.java**: Contains the logic for encrypting a given message using the DES key.
+3. **DESDecryptor.java**: Contains the logic for decrypting the encrypted message back to its original form using the DES key.
+
+### Prerequisites
+
+Before running the project, ensure you have the following installed:
+
+- **Java 17** or later (Download from [here](https://www.oracle.com/java/technologies/javase-jdk17-downloads.html)).
+- **Text Editor or IDE** (e.g., IntelliJ IDEA, Eclipse, Visual Studio Code).
+
+### How to Run
+
+#### 1. Generate DES Key
+
+To generate a **DES key**, run the `DESKeyGenerator.java` class. This will generate a new DES key, which will be used for both encryption and decryption.
+
+Run the following commands in your terminal (from the project directory):
+
+```bash
+javac DESKeyGenerator.java
+java DESKeyGenerator
+```
+
+The program will output the generated DES key in **Base64** format. You can use this key for encryption and decryption.
+
+Example output:
+```
+Generated DES Key: mQ0ANB2UJKj5zJNxtZ2zXw==
+```
+
+#### 2. Encrypt Data
+
+To **encrypt data** using the generated DES key, run the `DESEncryptor.java` class. This class will encrypt a plaintext message using the DES algorithm.
+
+Run the following commands:
+
+```bash
+javac DESEncryptor.java
+java DESEncryptor
+```
+
+The program will ask for the DES key in Base64 format and encrypt the data (in this case, the message "Hello, this is a test message.").
+
+Example output:
+```
+Encrypted Data (Base64): Bm5NlJdflg2eRkVgfpXbbQ==
+```
+
+#### 3. Decrypt Data
+
+To **decrypt the encrypted data**, run the `DESDecryptor.java` class. You will need the same DES key used for encryption to decrypt the data back to its original form.
+
+Run the following commands:
+
+```bash
+javac DESDecryptor.java
+java DESDecryptor
+```
+
+The program will ask for the Base64-encoded encrypted data and the DES key, then decrypt the data.
+
+Example output:
+```
+Decrypted Data: Hello, this is a test message.
+```
+
+### Notes
+
+- **Security Warning**: DES is an older encryption algorithm and is considered insecure due to its small key size (56 bits). For modern applications, **AES** (Advanced Encryption Standard) is recommended.
+- The **DES key** is encoded in Base64 to make it easier to store and transfer.
+- **Encryption Process**: DES uses symmetric encryption, meaning the same key is used for both encryption and decryption.
+- Ensure that the generated **DES key** is kept secure and private. If the key is compromised, anyone can decrypt the data.
+
+### License
+
+This project is licensed under the **MIT License**. See the LICENSE file for more details.
+
+---
+
+### Additional Notes:
+
+- **DES Key Size**: DES uses a 56-bit key, which is weak by modern cryptographic standards. For stronger security, use **AES** with a larger key size (e.g., 128-bit or 256-bit).
+- **Key Management**: In real-world applications, key management is critical. Secure key storage and distribution methods should be used to ensure the confidentiality of the key.
+
+Feel free to modify and extend the project as needed for your specific use case. Let me know if you need more help!
