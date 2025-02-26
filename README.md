@@ -1,2 +1,4 @@
 # DSA-DES-Crypto
-DSA-DES-Crypto combines the Digital Signature Algorithm (DSA) and Data Encryption Standard (DES) to provide secure communication. DES ensures data encryption, while DSA authenticates data through digital signatures, offering both confidentiality and integrity. This system protects sensitive information from unauthorized access.
+DES (Data Encryption Standard) is a symmetric-key block cipher that encrypts 64-bit data blocks using a 56-bit key through substitution and permutation operations.
+
+DSA (Data Structures & Algorithms) covers key data structures and algorithms in multiple languages, including arrays, linked lists, trees, graphs, sorting, and dynamic programming. Ideal for learning and practice.
