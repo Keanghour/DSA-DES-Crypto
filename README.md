@@ -65,4 +65,20 @@ This project demonstrates the use of the **Digital Signature Algorithm (DSA)** t
 
 ---
 
-Let me know if you need any more modifications or additional details in the README!
+## Contact
+
+Feel free to reach out if you have any questions or need further assistance:
+
+- **Email**: [phokeanghour12@gmail.com](mailto:phokeanghour12@gmail.com)
+- **Telegram**: [@phokeanghour](https://t.me/phokeanghour)
+
+[![Telegram](https://www.vectorlogo.zone/logos/telegram/telegram-ar21.svg)](https://t.me/phokeanghour)
+[![LinkedIn](https://www.vectorlogo.zone/logos/linkedin/linkedin-ar21.svg)](https://www.linkedin.com/in/pho-keanghour-27133b21b/)
+
+---
+
+**Credit**: This project was created by **Pho Keanghour**.
+
+---
+
+Let me know if this works or if you'd like any more adjustments!
